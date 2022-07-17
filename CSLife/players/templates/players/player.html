@@ -1,0 +1,15 @@
+{% extends 'players/base.html' %}
+ 
+{% block content %}
+ 
+<h1>{{player.nickname}}</h1>
+ 
+{% if player.photo %}
+<p><img class="img-article-left" src="{{player.photo.url}}"></p>
+{% endif %}
+
+<div class="clear"></div>
+<p>{{player.name}}
+<p>{{player.team}}
+{{player.information|linebreaks}}
+{% endblock %}
