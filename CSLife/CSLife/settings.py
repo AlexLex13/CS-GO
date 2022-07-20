@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'captcha',
     'players.apps.PlayersConfig',
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [
